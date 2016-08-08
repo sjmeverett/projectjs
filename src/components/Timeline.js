@@ -7,11 +7,10 @@ import './Timeline.scss';
 
 
 export default class Timeline extends React.Component {
-
   render() {
     let dates = [...momentRange(this.props.startDate, this.props.endDate)];
     let xScale = this.props.xScale;
-    
+
     return (
       <div className="timeline" style={{width: dates.length * xScale}}>
       {
@@ -27,7 +26,6 @@ export default class Timeline extends React.Component {
       </div>
     );
   }
-
 
   classes(date, i) {
     let a = ['timeline-day'];

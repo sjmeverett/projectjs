@@ -17,19 +17,13 @@ export default class TaskList extends React.Component {
 
     return (
       <div className="tasklist">
-        <div className="tasklist-dimension" style={{
-            left: min * xScale,
-            width
-          }}>
-          <DimensionBar width={width} />
-        </div>
       {
         tasks.map((task) => (
           <div className="tasklist-row">
             <div className="task" style={{
               left: task.column * xScale,
               width: task.width * xScale
-            }}>{task.task.name}</div>
+            }}>{task.task.title}</div>
           </div>
         ))
       }
