@@ -1,0 +1,21 @@
+
+.tasklist {
+  position: absolute;
+  margin-top: 50px;
+
+  .tasklist-dimension {
+    position: relative;
+    height: 25px;
+  }
+
+  .task {
+    position: relative;
+    border-radius: 3px;
+    background: #62BDD5;
+    color: #fff;
+    font-size: 12px;
+    padding: 4px;
+    height: 25px;
+    line-height: 17px;
+  }
+}

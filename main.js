@@ -1,5 +1,5 @@
 
-import LinearCalendar from './LinearCalendar';
+import GanttChart from './src/components/GanttChart';
 import ReactDOM from 'react-dom';
 import React from 'react';
 import './styles.scss';
@@ -9,7 +9,7 @@ let tasks = [
   {
     startDate: moment('2016-08-04'),
     endDate: moment('2016-08-08'),
-    name: 'Development'
+    name: 'Developments'
   },
   {
     startDate: moment('2016-08-09'),
@@ -23,4 +23,4 @@ let tasks = [
   }
 ];
 
-ReactDOM.render(<LinearCalendar tasks={tasks}/>, document.getElementById('content'));
+ReactDOM.render(<GanttChart tasks={tasks}/>, document.getElementById('content'));
